@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Articles</title>
+    </head>
+    <body>
+
+        <ul>
+            <% @articles.each do |article| %>
+                <a href= "/articles/<%= article.id %>">
+                <li><%= article.title %></li>
+                </a>
+            <% end %>
+
+        </ul>
+
+
+    </body>
+</html>
